@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SHOW MAN - Bart le Comédien</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🎭 THE SHOW MAN 🎭</h1>
+                <p class="subtitle">Avec Bart - Le Maître du Rire</p>
+            </div>
+        </header>
+
+        <!-- Stats de Bart -->
+        <div class="bart-stats">
+            <div class="stat-card">
+                <span class="stat-label">Popularité</span>
+                <div class="stat-value" id="popularity">0%</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Score Total</span>
+                <div class="stat-value" id="totalScore">0</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Histoires Racontées</span>
+                <div class="stat-value" id="storyCount">0</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Public en Ligne</span>
+                <div class="stat-value" id="audience">0</div>
+            </div>
+        </div>
+
+        <!-- Section Microphone et Histoires -->
+        <main class="main-content">
+            <div class="stage">
+                <!-- Micro de Bart -->
+                <div class="microphone-section">
+                    <div class="microphone">🎤</div>
+                    <h2>Bart le Comédien</h2>
+                    <button class="btn btn-generate" id="generateBtn">
+                        🎙️ Générer une Histoire
+                    </button>
+                </div>
+
+                <!-- Affichage de l'histoire -->
+                <div class="story-display" id="storyDisplay">
+                    <p id="storyText" class="story-text">Cliquez sur "Générer une Histoire" pour commencer le spectacle...</p>
+                    <span class="story-number" id="storyNumber"></span>
+                </div>
+
+                <!-- Reactions du Public -->
+                <div class="audience-reactions">
+                    <div class="reaction-buttons">
+                        <button class="reaction-btn" id="laughBtn" title="Rire">
+                            😂 Rire
+                            <span class="count" id="laughCount">0</span>
+                        </button>
+                        <button class="reaction-btn" id="applauseBtn" title="Applaudir">
+                            👏 Applaudir
+                            <span class="count" id="applauseCount">0</span>
+                        </button>
+                        <button class="reaction-btn" id="bravo" title="Bravo">
+                            🌟 Bravo
+                            <span class="count" id="bravoCount">0</span>
+                        </button>
+                        <button class="reaction-btn" id="encoreBtn" title="Encore">
+                            🔥 Encore!
+                            <span class="count" id="encoreCount">0</span>
+                        </button>
+                    </div>
+
+                    <!-- Commentaires du Public -->
+                    <div class="comments-section">
+                        <h3>💬 Commentaires du Public</h3>
+                        <div class="comment-input">
+                            <input 
+                                type="text" 
+                                id="commentInput" 
+                                placeholder="Laissez un commentaire..."
+                                maxlength="100"
+                            >
+                            <button class="btn btn-comment" id="commentBtn">Commenter</button>
+                        </div>
+                        <div class="comments-list" id="commentsList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar - Historique et Stats -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>📊 Historique des Histoires</h3>
+                    <div class="stories-history" id="storiesHistory"></div>
+                </div>
+
+                <div class="sidebar-section">
+                    <button class="btn btn-reset" id="resetBtn">🔄 Réinitialiser</button>
+                    <button class="btn btn-export" id="exportBtn">💾 Exporter Données</button>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🎭 THE SHOW MAN - Où Bart fait rire le public depuis 2024 🎤</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
