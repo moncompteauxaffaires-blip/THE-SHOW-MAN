@@ -1,4 +1,4 @@
-# THE-SHOW-MAN of cat ship a 
+# THE-SHOW-MAN of cat ship a ton
 // Les réactions font apparaître des emojis qui flottent à l'écran
 function addFloatingReaction(emoji) {
     const float = document.createElement('div');
