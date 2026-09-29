@@ -1,151 +1,101 @@
 # 🎭 THE SHOW MAN - Bart le Comédien
 
-Bienvenue dans **THE SHOW MAN**, un jeu interactif où vous incarnez Bart, le maître du rire! Générez des histoires hilarantes, récoltez des réactions du public et devenez une légende du spectacle.
+Bienvenue dans THE SHOW MAN, un jeu interactif où vous incarnez Bart, le maître du rire. Générer des histoires hilarantes, recueillir les réactions du public et devenir une légende du spectacle.
 
----
+## 🎮 Jouer
 
-## 🎮 **Jouer en Ligne**
+- Web: https://moncompteauxaffaires-blip.github.io/THE-SHOW-MAN
+- iOS / App Store: https://apps.apple.com/app/id/APP_ID_GENERATED_BY_APPLE
+- macOS: https://apps.apple.com/app/id/APP_ID_GENERATED_BY_APPLE
+- Android / Google Play: https://play.google.com/store/apps/details?id=com.moncompteauxaffairesblip.theshowman
+- Galaxy Store: https://galaxystore.samsung.com/detail/com.moncompteauxaffairesblip.theshowman
 
-### 🌐 Web (Gratuit - Accès Immédiat)
-**[Jouer maintenant sur le Web](https://moncompteauxaffaires-blip.github.io/THE-SHOW-MAN)**
+## ✨ Fonctionnalités
 
----
+- Génération d'histoires aléatoires
+- Réactions du public
+- Statistiques en temps réel
+- Achievements / trophées
+- Commentaires du public
+- Historique des histoires
+- Export de données
+- Réinitialisation du jeu
 
-## 📱 **Applications Mobiles**
+## 🚀 Statut
 
-### 🍎 iOS (App Store)
-**Coming Soon - En Développement**
-- Téléchargez bientôt sur l'App Store Apple
-- Optimisé pour iPhone et iPad
+- Web: Disponible
+- iOS / App Store: Coming Soon
+- macOS: Coming Soon
+- Android: Coming Soon
+- Galaxy Store: Coming Soon
 
-### 🍎 macOS (Mac App Store)
-**Coming Soon - En Développement**
-- Disponible pour Mac (Intel & Apple Silicon)
+## 📦 Projet
 
-### 🤖 Android (Google Play Store)
-**Coming Soon - En Développement**
-- Compatible avec Android 6.0+
-- Téléchargeable sur Google Play
+- GitHub: https://github.com/moncompteauxaffaires-blip/THE-SHOW-MAN
+App Store / iOS / macOS description
 
-### 🌌 Galaxy Store (Samsung)
-**Coming Soon - En Développement**
-- Spécialement optimisé pour appareils Samsung
-- Disponible sur Galaxy Store
+Titre: The Show Man
 
----
+Sous-titre: Bart, l’humour en direct
 
-## ✨ **Fonctionnalités du Jeu**
+Description courte: Une expérience fun et addictive où Bart raconte des histoires hilarantes, reçoit les réactions du public et monte en popularité.
 
-✅ **🎤 Histoires Aléatoires** - Générez des histoires hilarantes de Bart  
-✅ **😂👏🌟🔥 Système de Réactions** - Animations flottantes avec emojis  
-✅ **📊 Statistiques en Temps Réel** - Score, Popularité, Public  
-✅ **🏆 Achievements/Trophées** - Débloquez 4 trophées spéciaux  
-✅ **💬 Commentaires Interactifs** - Laissez vos commentaires du public  
-✅ **📜 Historique des Histoires** - Consultez vos meilleures histoires  
-✅ **💾 Export Données** - Téléchargez votre progression en JSON  
-✅ **🔄 Réinitialisation** - Recommencez une nouvelle partie  
+Description longue: THE SHOW MAN est un jeu de spectacle et de comédie où vous incarnez Bart, le maître du rire.
 
----
+Générez une histoire, faites rire le public, récoltez les applaudissements, les rires, les bravos et les encore. Suivez votre score, votre popularité et la foule qui grandit devant votre scène. Débloquez des trophées, lisez l’historique de vos meilleures blagues et réagissez comme un vrai comédien.
 
-## 🎯 **Achievements à Débloquer**
+Un jeu rapide, coloré, immersif et ultra fun à jouer en quelques secondes.
 
-🎬 **Première Histoire** - Générez votre première histoire  
-⭐ **Très Populaire** - Atteignez 80% de popularité  
-🎭 **Vrai Comédien** - Marquez 500 points  
-👑 **Roi du Public** - Rassemblez 100+ spectateurs  
+Idéal pour les amateurs de humour, de mini-jeux, de défis et de performance live.
 
----
+Google Play description
 
-## 🛠️ **Technologies Utilisées**
+Titre: The Show Man
 
-- **Frontend:** HTML5, CSS3, JavaScript Vanilla
-- **Stockage:** LocalStorage (données persistantes)
-- **Design:** Gradient moderne avec animations fluides
-- **Responsive:** Mobile, Tablet, Desktop
+Description courte: Un mini-jeu de stand-up et d’humour où Bart fait rire le public.
 
----
+Description longue: THE SHOW MAN est un jeu de spectacle où Bart prend la scène et transforme chaque moment en sketch. Créez vos meilleures histoires, réagissez au public, accumulez des points et devenez le comédien le plus populaire.
 
-## 📥 **Installation Locale**
+Avec des réactions en direct, un système de score, des commentaires du public, un historique des histoires et des trophées, le jeu est fun, rapide et addictif.
 
-### Cloner le Repo
-```bash
-git clone https://github.com/moncompteauxaffaires-blip/THE-SHOW-MAN.git
-cd THE-SHOW-MAN
-```
+Restez drôle, gagnez la foule et dominez la scène.
 
-### Lancer le Jeu
-Ouvrez simplement `index.html` dans votre navigateur :
-```bash
-open index.html
-# ou sur Linux:
-firefox index.html
-```
+Galaxy Store description
 
----
+Titre: The Show Man
 
-## 🚀 **Roadmap - Versions à Venir**
+Description: Plongez dans un mini-jeu de comédie où Bart fait rire toute la salle. Générez des histoires, réagissez au public et devenez la star du spectacle.
 
-- ✅ Version Web (Live)
-- 🔄 Application iOS (App Store)
-- 🔄 Application macOS
-- 🔄 Application Android (Google Play)
-- 🔄 Application Galaxy Store (Samsung)
-- 📋 Système de Classement Global
-- 📋 Multijoueur
-- 📋 Nouveaux Skins de Personnages
+Mots-clés / tags
 
----
+comedy game
+funny game
+story game
+humor
+stage simulation
+entertainment
+casual game
+arcade
+stand up
+live reactions
+Package / bundle IDs utiles
 
-## 💡 **Comment Jouer**
+Android / Google Play / Galaxy: com.moncompteauxaffairesblip.theshowman
 
-1. **Cliquez** sur "🎙️ Générer une Histoire"
-2. **Lisez** l'histoire hilarante de Bart
-3. **Réagissez** avec 😂 Rire, 👏 Applaudir, 🌟 Bravo, 🔥 Encore
-4. **Commentez** pour partager votre enthousiasme
-5. **Accumulez** des points et augmentez votre popularité
-6. **Débloquez** des achievements en atteignant les objectifs
+Apple App ID: à générer dans App Store Connect (non disponible avant publication)
 
----
+Pitch court
 
-## 👨‍💻 **Développeur**
+THE SHOW MAN est un mini-jeu de comédie où Bart prend la scène, fait rire le public et monte en popularité. En quelques secondes, vous générez des blagues, collectez les réactions du public et devenez la star du spectacle.
 
-Créé par: **moncompteauxaffaires-blip**  
-GitHub: [@moncompteauxaffaires-blip](https://github.com/moncompteauxaffaires-blip)
+Liens utiles
 
----
+GitHub: https://github.com/moncompteauxaffaires-blip/THE-SHOW-MAN
 
-## 📄 **Licence**
+Web: https://moncompteauxaffaires-blip.github.io/THE-SHOW-MAN
 
-Ce projet est sous licence MIT - Libre d'utilisation.
+Important
 
----
-
-## 🤝 **Contribuer**
-
-Les contributions sont bienvenues! Pour contribuer:
-1. Fork le projet
-2. Créez une branche (`git checkout -b feature/AmazingFeature`)
-3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
-
----
-
-## 📞 **Support & Contact**
-
-Pour toute question ou suggestion:
-- 📧 Ouvrez une Issue sur GitHub
-- 🐛 Signalez les bugs
-- 💬 Proposez des améliorations
-
----
-
-## 🎉 **Amusez-vous Bien!**
-
-**THE SHOW MAN** est conçu pour vous divertir. Générez des histoires, faites rire le public et devenez une légende du spectacle! 🎭✨
-
----
-
-**Dernière mise à jour:** 29 Septembre 2026
-
-*"Où Bart fait rire le public depuis 2024 🎤"*
+Les liens Apple exacts ne seront connus qu’après publication dans App Store Connect.
+Les liens Google Play et Galaxy Store sont prêts à être utilisés après publication.
+Le package Android/Galaxy est bien défini : com.moncompteauxaffairesblip.theshowman
