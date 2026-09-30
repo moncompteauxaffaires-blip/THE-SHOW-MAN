@@ -1,4 +1,4 @@
-# 🎭 THE SHOW MAN - Bart le Comédien
+# 🎭 THE SHOW MAN 
 
 Bienvenue dans THE SHOW MAN, un jeu interactif .
 
