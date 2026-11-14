@@ -1,117 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE SHOW MAN - Bart le Comédien</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b16">
+  <meta name="description" content="THE SHOW MAN : le comedy club interactif de Bart. Racontez des blagues, réagissez et faites monter l'ambiance !">
+  <title>THE SHOW MAN — Le Comedy Club de Bart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Rubik:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="header-content">
-                <h1>🎭 THE SHOW MAN 🎭</h1>
-                <p class="subtitle">Avec Bart - Le Maître du Rire</p>
-            </div>
-        </header>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-        <!-- Stats de Bart -->
-        <div class="bart-stats">
-            <div class="stat-card">
-                <span class="stat-label">Popularité</span>
-                <div class="stat-value" id="popularity">0%</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">Score Total</span>
-                <div class="stat-value" id="totalScore">0</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">Histoires Racontées</span>
-                <div class="stat-value" id="storyCount">0</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">Public en Ligne</span>
-                <div class="stat-value" id="audience">0</div>
-            </div>
-        </div>
-
-        <!-- Section Microphone et Histoires -->
-        <main class="main-content">
-            <div class="stage">
-                <!-- Micro de Bart -->
-                <div class="microphone-section">
-                    <div class="microphone">🎤</div>
-                    <h2>Bart le Comédien</h2>
-                    <button class="btn btn-generate" id="generateBtn">
-                        🎙️ Générer une Histoire
-                    </button>
-                </div>
-
-                <!-- Affichage de l'histoire -->
-                <div class="story-display" id="storyDisplay">
-                    <p id="storyText" class="story-text">Cliquez sur "Générer une Histoire" pour commencer le spectacle...</p>
-                    <span class="story-number" id="storyNumber"></span>
-                </div>
-
-                <!-- Reactions du Public -->
-                <div class="audience-reactions">
-                    <div class="reaction-buttons">
-                        <button class="reaction-btn" id="laughBtn" title="Rire">
-                            😂 Rire
-                            <span class="count" id="laughCount">0</span>
-                        </button>
-                        <button class="reaction-btn" id="applauseBtn" title="Applaudir">
-                            👏 Applaudir
-                            <span class="count" id="applauseCount">0</span>
-                        </button>
-                        <button class="reaction-btn" id="bravo" title="Bravo">
-                            🌟 Bravo
-                            <span class="count" id="bravoCount">0</span>
-                        </button>
-                        <button class="reaction-btn" id="encoreBtn" title="Encore">
-                            🔥 Encore!
-                            <span class="count" id="encoreCount">0</span>
-                        </button>
-                    </div>
-
-                    <!-- Commentaires du Public -->
-                    <div class="comments-section">
-                        <h3>💬 Commentaires du Public</h3>
-                        <div class="comment-input">
-                            <input 
-                                type="text" 
-                                id="commentInput" 
-                                placeholder="Laissez un commentaire..."
-                                maxlength="100"
-                            >
-                            <button class="btn btn-comment" id="commentBtn">Commenter</button>
-                        </div>
-                        <div class="comments-list" id="commentsList"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sidebar - Historique et Stats -->
-            <aside class="sidebar">
-                <div class="sidebar-section">
-                    <h3>📊 Historique des Histoires</h3>
-                    <div class="stories-history" id="storiesHistory"></div>
-                </div>
-
-                <div class="sidebar-section">
-                    <button class="btn btn-reset" id="resetBtn">🔄 Réinitialiser</button>
-                    <button class="btn btn-export" id="exportBtn">💾 Exporter Données</button>
-                </div>
-            </aside>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p>🎭 THE SHOW MAN - Où Bart fait rire le public depuis 2024 🎤</p>
-        </footer>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="THE SHOW MAN, accueil">
+      <span class="brand-mark" aria-hidden="true">🎙️</span>
+      <span><strong>THE SHOW MAN</strong><small>LE COMEDY CLUB DE BART</small></span>
+    </a>
+    <div class="topbar-tools">
+      <div class="live-pill"><span class="live-dot"></span> SPECTACLE EN DIRECT</div>
+      <button class="sound-toggle" id="audioToggle" type="button" aria-pressed="false" title="Activer ou couper la voix et les effets sonores"><span id="audioIcon" aria-hidden="true">🔇</span><span id="audioLabel">Son coupé</span></button>
     </div>
+  </header>
 
-    <script src="app.js"></script>
+  <main class="page-shell" id="home">
+    <section class="intro">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-line"></span> LA SCÈNE EST À VOUS</p>
+        <h1>Une scène. Un micro.<br><span>Des blagues à volonté.</span></h1>
+        <p class="intro-copy">Bart est prêt à faire le show. Choisissez une ambiance, lancez une histoire et faites vibrer la salle.</p>
+      </div>
+      <div class="intro-badge" aria-label="Spectacle numéro un"><span>★</span><strong>SHOW<br>#<span id="showNumber">01</span></strong></div>
+    </section>
+
+    <section class="stats-grid" aria-label="Statistiques du spectacle">
+      <article class="stat-card"><span class="stat-icon">✦</span><div><span class="stat-label">Popularité</span><strong class="stat-value" id="popularity">0%</strong></div><span class="stat-foot">DU PUBLIC</span></article>
+      <article class="stat-card"><span class="stat-icon">⚡</span><div><span class="stat-label">Score total</span><strong class="stat-value" id="totalScore">0</strong></div><span class="stat-foot">POINTS</span></article>
+      <article class="stat-card"><span class="stat-icon">🎭</span><div><span class="stat-label">Histoires</span><strong class="stat-value" id="storyCount">0</strong></div><span class="stat-foot">SUR SCÈNE</span></article>
+      <article class="stat-card"><span class="stat-icon">👥</span><div><span class="stat-label">Public présent</span><strong class="stat-value" id="audience">128</strong></div><span class="stat-foot">DANS LA SALLE</span></article>
+    </section>
+
+    <div class="dashboard">
+      <section class="main-column">
+        <section class="stage-card" aria-label="Scène de spectacle">
+          <div class="stage-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="curtain curtain-left" aria-hidden="true"></div><div class="curtain curtain-right" aria-hidden="true"></div>
+          <div class="stage-topline"><span class="stage-tag"><span class="live-dot"></span> EN SCÈNE</span><span class="venue">THE SHOW MAN <span>•</span> PARIS</span></div>
+          <div class="stage-content">
+            <div class="spotlight" aria-hidden="true"></div>
+            <div class="bart-avatar" id="bartAvatar" aria-label="Avatar animé de Bart le comédien" role="img">
+              <div class="avatar-shadow"></div>
+              <div class="avatar-head"><div class="hair"></div><div class="brow brow-left"></div><div class="brow brow-right"></div><div class="eye eye-left"><i></i></div><div class="eye eye-right"><i></i></div><div class="nose"></div><div class="smile"><i></i></div><div class="ear ear-left"></div><div class="ear ear-right"></div></div>
+              <div class="avatar-neck"></div><div class="avatar-body"><span class="shirt-star">★</span></div>
+              <div class="avatar-mic">🎤</div>
+            </div>
+            <div class="speech-bubble" id="speechBubble" aria-live="polite">Bienvenue au club ! Bart vous attend 🎤</div>
+            <div class="stage-name"><span class="stage-name-label">VOTRE MAÎTRE DE CÉRÉMONIE</span><h2>Bart <span>le Showman</span></h2></div>
+          </div>
+          <div class="teleprompter"><span class="teleprompter-icon">✦</span><p id="storyText" aria-live="polite">Cliquez sur « Lancer une blague » pour commencer le spectacle…</p><span class="story-number" id="storyNumber"></span></div>
+          <div class="stage-floor"><span></span></div>
+          <div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
+        </section>
+
+        <section class="control-panel">
+          <div class="panel-heading"><div><p class="eyebrow">À VOUS DE JOUER</p><h2>Faites votre show</h2></div><span class="panel-star">✳</span></div>
+          <div class="controls-row">
+            <label class="topic-control" for="topicSelect"><span>AMBIANCE DU SET</span><select id="topicSelect"><option value="all">🎲 Surprise du public</option><option value="tech">🤖 Tech & IA</option><option value="daily">☕ Vie quotidienne</option><option value="dev">💻 Développeurs</option><option value="dad">👨‍👧 Jeux de mots</option><option value="absurd">🌀 Absurde</option></select></label>
+            <button class="btn-primary" id="generateBtn" type="button"><span class="play-icon">▶</span><span><small>À VOUS DE JOUER</small><strong>Lancer une blague</strong></span><span class="button-arrow">↗</span></button>
+          </div>
+          <div class="reaction-area"><div class="reaction-heading"><div><h3>La salle réagit</h3><p>Votre réaction fait évoluer le spectacle.</p></div><span class="mood-label" id="moodText">🔥 Salle bien chaude</span></div>
+            <div class="mood-track" role="progressbar" aria-label="Ambiance de la salle" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"><span id="moodMeter"></span></div>
+            <div class="reaction-buttons">
+              <button class="reaction-btn" id="laughBtn" type="button"><span>😂</span><b>Rire</b><i id="laughCount">0</i></button>
+              <button class="reaction-btn" id="applauseBtn" type="button"><span>👏</span><b>Applaudir</b><i id="applauseCount">0</i></button>
+              <button class="reaction-btn" id="bravo" type="button"><span>🌟</span><b>Bravo</b><i id="bravoCount">0</i></button>
+              <button class="reaction-btn" id="encoreBtn" type="button"><span>🔥</span><b>Encore</b><i id="encoreCount">0</i></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="open-mic-card">
+          <div class="open-mic-icon">🎤</div><div class="open-mic-copy"><p class="eyebrow">LE MICRO EST À VOUS</p><h2>Mode Open Mic</h2><p>Envoyez votre meilleure blague. Bart la lit à voix haute si le son est activé !</p></div>
+          <form id="jokeForm" class="joke-form"><label class="visually-hidden" for="userJokeInput">Votre blague</label><textarea id="userJokeInput" rows="2" maxlength="240" placeholder="Écrivez votre blague ici…" required></textarea><div class="form-bottom"><span id="characterCount">0 / 240</span><button class="btn-secondary" type="submit">Tester ma blague <span>↗</span></button></div></form>
+        </section>
+      </section>
+
+      <aside class="sidebar">
+        <section class="side-card audience-card"><div class="side-title"><div><p class="eyebrow">LES VOIX DE LA SALLE</p><h2>Dans le public</h2></div><span class="audience-live"><span class="live-dot"></span> LIVE</span></div>
+          <div class="crowd-visual" aria-hidden="true"><span>🧑🏽</span><span>👩🏻</span><span>🧔🏾</span><span>👩🏼</span><span>🧑🏻</span><span>👨🏽</span><span>👩🏾</span><span>🧑🏼</span><span>👨🏻</span><span>👩🏽</span><span>🧔🏻</span><span>👩🏻</span></div>
+          <p class="crowd-caption">La salle est prête. Faites-la rire !</p>
+        </section>
+        <section class="side-card history-card"><div class="side-title"><div><p class="eyebrow">LES MEILLEURS MOMENTS</p><h2>Dans les archives</h2></div><span class="archive-icon">▤</span></div><div class="stories-history" id="storiesHistory" aria-live="polite"></div></section>
+        <section class="side-card comments-card"><div class="side-title"><div><p class="eyebrow">LE PUBLIC A LA PAROLE</p><h2>Le livre d’or</h2></div><span class="comment-icon">✎</span></div><form id="commentForm" class="comment-form"><label class="visually-hidden" for="commentInput">Votre commentaire</label><input id="commentInput" type="text" maxlength="100" placeholder="Laissez un petit mot…" required><button type="submit" aria-label="Envoyer le commentaire">↗</button></form><div class="comments-list" id="commentsList" aria-live="polite"></div></section>
+        <section class="side-actions"><button class="text-action" id="exportBtn" type="button">↓ Exporter mes données</button><button class="text-action reset-action" id="resetBtn" type="button">↺ Recommencer à zéro</button></section>
+      </aside>
+    </div>
+    <footer class="footer"><span>🎭 THE SHOW MAN</span><span>FAIT AVEC HUMOUR · PROPULSÉ PAR VOTRE PUBLIC</span><span>© <span id="year"></span></span></footer>
+  </main>
 </body>
 </html>
