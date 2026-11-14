@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez Kodi, un centre multimédia libre et personnalisable.">
+  <title>À propos de Kodi — Centre multimédia</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101923;
+      --panel: #182531;
+      --text: #f4f7fa;
+      --muted: #c1ccd5;
+      --blue: #20a9dc;
+      --blue-dark: #087da9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #ffffff20;
+      background: #101923;
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--blue);
+      font-size: 1.65rem;
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: .04em;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: .95rem;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] { color: white; }
+
+    .hero {
+      padding: 82px 0 70px;
+      background:
+        radial-gradient(ellipse at 80% 10%, #087da955, transparent 45%),
+        linear-gradient(135deg, #142634, var(--bg));
+    }
+
+    .eyebrow {
+      color: #77d7fa;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 12px 0;
+      font-size: clamp(2.5rem, 7vw, 4.8rem);
+      line-height: 1.05;
+    }
+
+    .intro {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 20px;
+      border-radius: 6px;
+      background: var(--blue);
+      color: #06121a;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    main { padding: 56px 0; }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+    }
+
+    .copy {
+      max-width: 800px;
+      color: var(--muted);
+    }
+
+    .notice {
+      margin: 32px 0 56px;
+      padding: 20px 24px;
+      border-left: 4px solid #f5b942;
+      border-radius: 4px;
+      background: #f5b94216;
+      color: var(--muted);
+    }
+
+    .notice strong { color: var(--text); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid #ffffff17;
+      border-radius: 10px;
+      background: var(--panel);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      color: #78d7f8;
+      font-size: 1.2rem;
+    }
+
+    .card p { margin: 0; color: var(--muted); }
+
+    .community {
+      margin-top: 58px;
+      padding: 30px;
+      border-radius: 10px;
+      background: linear-gradient(120deg, #087da9, #155a83);
+    }
+
+    .community p { max-width: 720px; }
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid #ffffff20;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer a { color: #78d7f8; }
+
+    @media (max-width: 650px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+      .nav-links { gap: 12px; }
+      .hero { padding: 58px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Navigation principale">
+      <a class="brand" href="#" aria-label="Kodi, accueil">KODI</a>
+      <div class="nav-links">
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#communaute">Communauté</a>
+        <a href="#avertissement">À savoir</a>
+        <a href="https://kodi.tv/download/">Télécharger</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Centre multimédia libre</div>
+      <h1>Votre divertissement, à votre façon.</h1>
+      <p class="intro">
+        Kodi est un centre multimédia gratuit et personnalisable qui rassemble
+        vos vidéos, votre musique, vos photos et bien plus encore.
+      </p>
+      <a class="button" href="https://kodi.tv/download/">Découvrir les téléchargements</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>Qu’est-ce que Kodi&nbsp;?</h2>
+      <p class="copy">
+        Kodi est un logiciel libre développé avec l’aide d’une communauté
+        internationale. Il fonctionne sur plusieurs plateformes et propose une
+        interface pensée pour être utilisée sur un téléviseur, notamment avec
+        une télécommande. Vous pouvez personnaliser son apparence et ajouter
+        des fonctionnalités selon vos besoins.
+      </p>
+    </section>
+
+    <aside class="notice" id="avertissement">
+      <strong>Important :</strong> Kodi ne fournit ni films, ni séries, ni chaînes
+      de télévision. Vous devez utiliser vos propres médias et des sources
+      auxquelles vous êtes autorisé à accéder.
+    </aside>
+
+    <section id="fonctionnalites">
+      <h2>Explorez vos médias</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Films</h3>
+          <p>Organisez votre vidéothèque et parcourez vos films avec leurs informations.</p>
+        </article>
+        <article class="card">
+          <h3>Séries TV</h3>
+          <p>Retrouvez saisons et épisodes dans une bibliothèque facile à parcourir.</p>
+        </article>
+        <article class="card">
+          <h3>Musique</h3>
+          <p>Écoutez et classez votre collection musicale et vos listes de lecture.</p>
+        </article>
+        <article class="card">
+          <h3>Photos</h3>
+          <p>Parcourez vos images et créez des diaporamas.</p>
+        </article>
+        <article class="card">
+          <h3>Télévision en direct</h3>
+          <p>Avec une configuration compatible, gérez la télévision en direct et les enregistrements.</p>
+        </article>
+        <article class="card">
+          <h3>Personnalisation</h3>
+          <p>Adaptez l’interface et découvrez les extensions de la communauté.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="community" id="communaute">
+      <h2>Construit par une communauté</h2>
+      <p>
+        Kodi est un projet libre auquel contribuent des développeurs,
+        traducteurs et bénévoles. Consultez les ressources officielles pour
+        obtenir de l’aide ou participer au projet.
+      </p>
+      <a href="https://forum.kodi.tv/">Visiter le forum Kodi</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Page de démonstration non officielle — consultez
+      <a href="https://kodi.tv/about/">la page officielle de Kodi</a>.
+    </div>
+  </footer>
+</body>
+</html>
